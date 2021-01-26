@@ -1,0 +1,399 @@
+/*
+Theme Name: Plenty O' Plants
+Author: Marisol Garcia
+Author URI: https://marsgs.com/
+Description: Plants O' Plenty
+Version: 1.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Text Domain: Plants
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    color: #3C4329;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 31px;
+    color: #717171;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 89px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+p, h1, h2 {
+    margin: 0;
+}
+
+.header-text p {
+    margin: 2rem 0;
+}
+
+.container {
+  max-width: 117rem;
+  margin: auto;
+  width: 100%;
+  padding: 1.75rem 2rem;
+}
+
+/* navigation */
+nav {
+    display: block;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    color: #717171;
+    border-bottom: 1px solid transparent;
+    transition: ease .2s;
+
+}
+
+.nav-list a:hover {
+    color: #3C4329;
+    transition: ease .2s;
+    border-bottom: 1px solid #6D745A;
+
+}
+
+
+
+.nav-list li {
+    margin: 0 1.5rem 0 1.5rem;
+    color: #717171;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-list li:last-child {
+    margin: 0 0 0 1.5rem;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #6D745A solid 2px;
+    padding: 1rem 0;
+}
+
+/* HEADER */
+.header-card {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    max-width: 50rem;
+    padding: 6rem;
+}
+
+.header-content > *{
+    padding: 1rem 2.5rem;
+
+}
+
+.header-image {
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    background: #f8f4ed url("assets/Cactile_HeroImage.png") no-repeat  bottom right;
+}
+
+.header-image {
+    padding: 7rem 1rem;
+}
+
+.header-content button {
+    background-color: #3C4329;
+    color: #FAFAFA;
+    border: #3C4329 2px solid;
+}
+
+
+/* card */
+.section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+}
+.card {
+    background-color: #FAFAFA ;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-content > * {
+    padding: 1rem 2.5rem;
+    width: 34rem;
+}
+
+.about-width > * {
+    width: 44rem;
+}
+
+.image-wrapper  img{
+    width: 100%;
+}
+
+.double-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3rem;
+}
+
+.plant-name p {
+    color: #3C4329;
+}
+
+.light-green {
+    background-color: #E0EBDF;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.btn {
+    width: fit-content;
+    outline: none;
+    background-color: transparent;
+    border-width: 0;
+    border: #6D745A 2px solid;
+    padding:  1.5rem 3.5rem;
+    color: #6D745A;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 1rem 2.5rem;
+    width: 20rem;
+    transition: ease .3s;
+}
+
+/* contact & footer */
+.contact {
+    background-color: #E0EBDF;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.contact h2 {
+    padding: 1rem 0;
+    display: inline-block;
+}
+
+.inline {
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color:#3C4329 ;
+    justify-items: center;
+    margin-bottom: 3.5rem;
+    align-content: center;
+}
+
+.footer > * {
+    padding: 1rem 2.5rem;
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.footer, .contact {
+    height: 26rem;
+}
+
+.footer-nav img {
+    margin: 0 1rem;
+}
+.footer-nav a {
+    text-decoration: none;
+    color: #FAFAFA;
+    transition: ease .2s;
+    border-bottom: 1px solid transparent;
+
+}
+
+.footer-nav a:hover {
+    color: white;
+    transition: ease .2s;
+    border-bottom: 1px solid white;
+}
+
+.footer-links > *{
+    margin: .5rem;
+}
+
+.footer-links img {
+    opacity: .7;
+    transition: .2s ease;
+}
+
+.footer-links img:hover {
+    opacity: 1;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+/* slick */
+
+.slick img{
+    width: 100%;
+    height: auto;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-dots {
+    position: static !important;
+}
+
+.slick-dots li.slick-active button:before
+{
+    font-size: 24px !important;
+}
+.slick-dots li button:before {
+    opacity: 1 !important;
+    font-size: 14px !important;
+}
+
+.slick-dots li {
+    margin: 0 8px !important;
+}
+
+/* end slick */
+
+.btn:hover {
+    background-color: #6D745A;
+    color: #FAFAFA;
+    border: #6D745A 2px solid;
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+@media (max-width: 83rem) {
+    .section-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows:.5fr 1fr;
+        grid-gap: 2rem;
+
+    }
+    .reverse {
+        grid-template-rows:1fr .5fr;
+
+    }
+    .header-image {
+        padding: 5rem 1rem;
+    }
+
+    .inline {
+        flex-direction: column;
+    }
+
+    .inline .btn {
+        margin: 0;
+    }
+}
+
+
+
+@media (max-width: 78rem) {
+    .header-image {
+        background-position: bottom center !important;
+    }
+    .header-image {
+        padding:0;
+    }
+
+    .about-width > * {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-wrapper {
+        flex-direction: column;
+    }
+    .nav-list {
+        padding: 1rem 0;
+    }
+    .nav-list li:first-child {
+        margin: 0 1.5rem 0 0;
+        }
+    .nav-list li {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .footer-nav .nav-list {
+        display: block;
+    }
+
+    .footer-nav .nav-list li{
+        margin: 0;
+    }
+    .footer-nav img{
+        margin: 2rem 1rem;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width: 500px){
+
+    .header-content {
+        padding: 0;
+    }
+    .about-width > * {
+        width: 0;
+    }
+
+    .card-content > * {
+        width: auto;
+    }
+}
